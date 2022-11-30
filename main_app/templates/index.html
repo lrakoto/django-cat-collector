@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>Cat Collector</h1>
+
+    <div>
+        {% for i in cats %}
+        <p>Name: {{ i.name }}</p>
+        <p>Age: {{ i.age }}</p>
+        <hr>
+        {% endfor %}
+    </div>
+
     <footer>All Rights Reserved, Cat Collector 2022</footer>
 </body>
 </html>
