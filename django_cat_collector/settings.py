@@ -15,7 +15,6 @@ from os import environ
 from dotenv import load_dotenv, dotenv_values
 
 config = dotenv_values('.env')
-print('>>>>>>>>>>>>>>>>>>', config)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +25,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config.get('SECRET_KEY')
-
-print('Key: >>>>', SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
